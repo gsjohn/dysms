@@ -9,5 +9,6 @@
 return [
 	'ALIDAYU_APP_KEY' => 'app key id',
 	'ALIDAYU_APP_SECRET' => 'app secret',
-	'ALIDAYU_SIGN' => 'sign name'
+	'ALIDAYU_SIGN' => 'sign name',
+	'Verify_Code_Template' => 'SMS_92100140'
 ];

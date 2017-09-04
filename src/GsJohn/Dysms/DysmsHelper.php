@@ -49,16 +49,17 @@ class DysmsHelper
 	/**
 	 * 验证码
 	 * @param $phone
-	 * @return \App\Services\Ali\ResultSet|mixed|\SimpleXMLElement
+	 * @return stdClass
 	 */
 	public function sendVerifyCode($phone){
 		$code = $this->verifyCode(6);
-		$resp = $this->sendSms('SMS_92100140',$phone, ['code'=> $code], null);
+		$vct = config('dysms.Verify_Code_Template');
+		$resp = $this->sendSms($vct, $phone, ['code'=> $code], null);
 		$cacheKey = static::CACHE_PREFIX . $phone;
 		$expiresAt = Carbon::now()->addMinutes(15);
 		Cache::put($cacheKey, $code, $expiresAt);
 		return $resp;
-	}
+	}?
 
 	/**
 	 * 生成验证码
