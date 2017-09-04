@@ -1,0 +1,21 @@
+{
+    "name": "john/dysms",
+    "description": "dysms api",
+    "type": "library",
+    "license": "apache",
+    "authors": [
+        {
+            "name": "gsjohn",
+            "email": "sz.gs.john@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "GsJohn\\Dysms\\": "src/"
+        }
+    }
+}
