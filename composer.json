@@ -1,8 +1,8 @@
 {
-    "name": "john/dysms",
-    "description": "dysms api",
+    "name": "gsjohn/dysms",
+    "description": "dysms api services",
     "type": "library",
-    "license": "apache",
+    "license": "apache2",
     "authors": [
         {
             "name": "gsjohn",
