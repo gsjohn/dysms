@@ -59,7 +59,7 @@ class DysmsHelper
 		$expiresAt = Carbon::now()->addMinutes(15);
 		Cache::put($cacheKey, $code, $expiresAt);
 		return $resp;
-	}?
+	}
 
 	/**
 	 * 生成验证码
